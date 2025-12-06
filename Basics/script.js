@@ -24,3 +24,12 @@ gsap.to("#box3",{
     borderRadius:"50%"
 })
 
+gsap.to("#box4",{
+    x:1000,
+    rotate:360,
+    delay:1,
+    duration:2,
+    repeat:-1, // repeat component, number provide+1 times, if -1 is provided it will repeat infinite times 
+
+    yoyo:true // return again from x=1000px 
+})
