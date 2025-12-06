@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 10px;
+    background-color: black;
+    color:white
+}
+
+#box1{
+    border: 2px solid white;
+    height :150px;
+    margin-bottom: 5px;
+}
+
+#box2{
+    border: 2px solid white;
+    height :150px;
+    margin-bottom: 5px;
+}
