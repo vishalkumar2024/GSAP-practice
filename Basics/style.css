@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 10px;
+    background-color: black;
+    color:white
+}
+
+#box1{
+    background-color: purple;
+    height :150px;
+    width:150px;
+    margin-bottom: 5px;
+}
+#box2{
+    background-color: rgb(6, 128, 0);
+    height :150px;
+    width:150px;
+    margin-bottom: 5px;
+}
+#box3{
+    background-color: rgb(193, 146, 34);
+    height :150px;
+    width:150px;
+    margin-bottom: 5px;
+}
