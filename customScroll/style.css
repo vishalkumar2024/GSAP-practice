@@ -20,5 +20,6 @@ body, html{
     width: 10px;
     background-color: white;
     position: fixed;
+    top: -10px;
     border-radius: 50%;
 }
