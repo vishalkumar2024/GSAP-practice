@@ -54,8 +54,8 @@ gsap.from("#page4 #box", {
         trigger: "#page4 #box",
         scroller: "body",
         markers: true,
-        start: "top 70%", // component animate between start and end defined
-        end: "top 55%",
-        scrub: true, // animate the component on scrolling
+        start: "top 80%", // component animate between start and end defined
+        end: "top 50%",
+        scrub: 3, // animate the component on scrolling
     }
 })
