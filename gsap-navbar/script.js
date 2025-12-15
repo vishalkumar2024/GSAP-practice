@@ -4,6 +4,13 @@ let close = document.querySelector("#sidebar i")
 
 let tl = gsap.timeline();
 
+gsap.from("#nav h1",{
+    y:20,
+    opacity:0,
+    delay:0.5,
+    
+})
+
 tl.to("#sidebar",{
     right:0,
     duration:0.7
