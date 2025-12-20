@@ -40,3 +40,20 @@ body{
 #btn:active{
   scale: 0.9;
 }
+
+.thirdDiv{
+  border: 2px solid white;
+  margin: 40px 10px 10px 10px ;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#fly{
+  height: 90px;
+  width: 90px;
+  cursor: pointer;
+}

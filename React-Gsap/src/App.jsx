@@ -2,14 +2,24 @@ import './App.css'
 import { gsap } from 'gsap'
 import { useGSAP } from '@gsap/react';
 import { useRef, useState } from 'react';
+import flyImage from "../src/assets/image.png"
 
 function App() {
   const secDiv = useRef()
-  const [random, setRandom] = useState(0);
+
+  const moveX = gsap.utils.random(-200, 300, 10);
+  const roters = gsap.utils.random(-360, 720, 30)
+  const [move, setMove] = useState(0);
   const [roter, setRoter] = useState(0);
 
-  const Random = gsap.utils.random(-200, 300, 10);
-  const roters = gsap.utils.random(-360, 720, 30)
+
+  const [X, setX] = useState(0);
+  const [Y, setY] = useState(0);
+  const [rotate, setRotate] = useState(0);
+
+  const RandomX = gsap.utils.random(-200, 300, 10);
+  const RandomY = gsap.utils.random(-300, 300, 10);
+  const flyRotate = gsap.utils.random(-360, 720, 30)
 
   useGSAP(() => {
     gsap.to("#box1", {
@@ -31,13 +41,23 @@ function App() {
 
   useGSAP(() => {
     gsap.to("#box", {
-      x:Random,
-      duration:1,
-      rotate:roters,
+      x: move,
+      duration: 1,
+      rotate: roters,
     })
-  },[random, roter ])
+  }, [move, roter])
 
-   
+
+  //  Fly Animation
+  useGSAP(() => {
+    gsap.to("#fly", {
+      x: X,
+      y: Y,
+      rotate: rotate
+    })
+  }, [X, Y, rotate])
+
+
   return (
     <div>
 
@@ -49,10 +69,20 @@ function App() {
       <div className="secondDiv">
         <div id="box"></div>
         <button id="btn" onClick={() => {
-          setRandom(Random)
-         setRoter(roters)
+          setMove(moveX)
+          setRoter(roters)
         }}>Animate</button>
       </div>
+
+      <div className="thirdDiv">
+        <img id="fly" src={flyImage}
+          onClick={() => {
+            setX(RandomX)
+            setY(RandomY)
+            setRotate(flyRotate)
+          }} />
+      </div>
+
 
     </div>
   )
