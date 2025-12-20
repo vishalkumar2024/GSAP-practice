@@ -8,3 +8,35 @@ body{
   width: 100px;
   background-color: red;
 }
+.secondDiv{
+  border: 2px solid white;
+  margin: 10px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#box{
+  height: 100px;
+  width: 100px;
+  background: -webkit-linear-gradient(green, lime);
+  /* border-radius: 50%; */
+  margin-bottom: 20px;
+}
+
+#btn{
+  padding: 10px;
+  width: 100px;
+  cursor: pointer;
+  background: -webkit-linear-gradient(lightseagreen , seagreen );
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  color: #fff;
+}
+
+#btn:active{
+  scale: 0.9;
+}
