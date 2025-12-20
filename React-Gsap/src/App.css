@@ -1,0 +1,10 @@
+body{
+  background-color: #000;
+  color: #fff;
+}
+
+#box1,#box2{
+  height: 100px;
+  width: 100px;
+  background-color: red;
+}
